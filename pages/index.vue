@@ -1,6 +1,11 @@
 <template>
-  <Tutorial/>
-</template>
+  <div>
+    <HeaderComponent />
+    <WelcomeComponent />
+    <!-- <VideoComponent /> -->
+    <SliderComponent />
+  </div>
+<!-- <Tutorial/> --></template>
 
 <script>
 export default {
