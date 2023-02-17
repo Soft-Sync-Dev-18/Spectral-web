@@ -2,10 +2,10 @@
   <div>
     <HeaderComponent />
     <WelcomeComponent />
-    <!-- <VideoComponent /> -->
+    <STORYOFSPECTRAL/>
     <SliderComponent />
   </div>
-<!-- <Tutorial/> --></template>
+</template>
 
 <script>
 export default {
