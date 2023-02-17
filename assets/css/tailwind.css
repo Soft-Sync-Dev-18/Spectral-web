@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    /* overflow-x: hidden; */
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
+    font-family: Akira-bold;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    border: 0 solid,
+}
+
+@layer components {
+    .btn {
+        @apply text-base font-medium rounded-lg p-3 bg-black text-white;
+    }
+
+    .logo {
+        @apply bg-sky-500 text-white text-base font-medium rounded-lg p-3;
+    }
+
+    .bg-bottom-fade:before {
+        content: var(--tw-content);
+        z-index: 10;
+    }
+
+    ::before {
+        --tw-content: "";
+    }
+
+    .after\:h-\[25vh\]:after {
+        content: var(--tw-content);
+        height: 25vh;
+    }
+
+    .bg-bottom-fade:after {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        display: block;
+        height: 50%;
+        width: 100%;
+        background-image: linear-gradient(to top, var(--tw-gradient-stops));
+        --tw-gradient-from: #000;
+        --tw-gradient-to: transparent;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        --tw-content: "";
+        content: var(--tw-content);
+    }
+
+    .standard-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1440px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+        .sm\:h-\[140px\] {
+            height: 140px;
+        }
+    }
+
+    .leading-\[0\.8\] {
+        line-height: .8;
+    }
+
+    .animate-scale-down {
+        -webkit-animation: scale-down 1.25s ease-out forwards;
+        animation: scale-down 1.25s ease-out forwards;
+    }
+
+    @media (max-width: 1024px) {
+        .intro-h1 h1 {
+            font-size: 90px;
+            line-height: 1;
+            text-transform: uppercase;
+            line-height: .86;
+            letter-spacing: .01em;
+            flex-wrap: nowrap;
+            text-align: center;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            display: flex;
+            font-weight: 400;
+        }
+    }
+
+    .intro-h1 h1 {
+        font-size: 100px;
+        line-height: 1;
+        text-transform: uppercase;
+        line-height: .86;
+        letter-spacing: .01em;
+        flex-wrap: nowrap;
+        text-align: center;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    @media (min-width: 640px) {
+
+        .intro-h1 h1 {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 90px;
+            line-height: 1;
+            text-transform: uppercase;
+            line-height: .86;
+            letter-spacing: .01em;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    @media (min-width: 640px) {
+
+        .intro-h1 h1>:not([hidden])~:not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        .intro-h1 h1>strong:last-of-type {
+            /* font-size: 140px; */
+        }
+
+        .intro-h1 em strong {
+            margin-left: auto;
+            display: block;
+            font-size: 34px;
+        }
+    }
+
+    .intro-h1 h1>:not([hidden])~:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0px * var(--tw-space-x-reverse));
+        margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+    }
+
+    .intro-h1 h1 {
+        font-size: 90px;
+        line-height: 1;
+        text-transform: uppercase;
+        line-height: .86;
+        letter-spacing: .01em;
+        text-align: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    .intro-h1 em {
+        flex: 1 1 0%;
+    }
+
+    .intro-h1 em strong {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        font-size: 34px;
+        font-style: normal;
+        line-height: .8;
+    }
+}
