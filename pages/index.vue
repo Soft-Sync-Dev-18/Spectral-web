@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <STORYOFSPECTRAL/>
 </template>
 
 <script>

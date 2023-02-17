@@ -21,21 +21,29 @@
             </div>
             <div
               class="intro-h1 headline-1 mt-0 flex w-full items-center justify-center leading-[0.8] lg:mt-10 sm:h-[140px] md:pb-2 animate-scale-down">
-              <div class="markdown" style=" animation-delay: 0ms;">
-                <h1>
-                  <strong>ENTER</strong>
-                  <em>
-                    <strong>the</strong>
-                  </em>
-                  <strong>OTHERSIDE</strong>
-                </h1>
+              <div class="markdown" style="animation-delay: 0ms;">
+                <h1><strong>ENTER</strong> <em><strong>the</strong></em><strong>OTHERSIDE</strong></h1>
+              </div>
+            </div>
+            <div class="flex flex-col items-center text-left intro-p mt-10 md:mt-16 animate-fade-up">
+              <div class="text-justify text-gray-medium" style="max-width: 500px;  animation-delay: 0ms;">
+                <div class="markdown">
+                  <p>You got here just in time.</p>
+                  <p>Otherside is a gamified, interoperable metaverse currently under development. The game blends
+                    mechanics from massively multiplayer online role playing games (MMORPGs) and web3-enabled virtual
+                    worlds. Think of it as a metaRPG where the players own the world, your NFTs can become playable
+                    characters, and thousands can play together in real time.</p>
+                </div>
               </div>
             </div>
           </section>
+          <PRODUCTVERTICALS />
+
         </div>
       </div>
     </div>
-</main>
+
+  </main>
 </template>
 
 <script>
