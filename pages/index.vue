@@ -1,5 +1,10 @@
 <template>
-  <STORYOFSPECTRAL/>
+  <div>
+    <HeaderComponent />
+    <WelcomeComponent />
+    <STORYOFSPECTRAL/>
+    <SliderComponent />
+  </div>
 </template>
 
 <script>
