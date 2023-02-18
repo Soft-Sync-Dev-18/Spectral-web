@@ -4,6 +4,7 @@
     <WelcomeComponent />
     <STORYOFSPECTRAL/>
     <SliderComponent />
+    <FooterComponent/>
   </div>
 </template>
 
